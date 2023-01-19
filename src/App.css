@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: rgb(83, 74, 74);
   color: white;
+  scroll-behavior: smooth;
 }
 
-.App-link {
-  color: #61dafb;
+.movie-app{
+  display:grid;
+  grid-template-columns: repeat(3,3fr);
+  margin-top: 20px;
+  margin-left: 5%;
+  grid-area: span;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  margin: 30px 30px;
+  height: 300px;
+  width: 300px;
+  border-radius: 15px;
+  transition: 1s;
+}  
+
+img:hover {
+  border-radius: 5px;
+  scale: 1.1;
+  filter: drop-shadow(0 0 22px #61dafbaa);
+}
+
+.hidden {
+  transition: 0.3s;
+  visibility: hidden;
+}
+
+.Search{
+      border: 2px solid #eb0909;
+        padding: 14px;
+        width: 25%;
+        margin:3% 37%;
+        border-radius: 5px;
+        cursor: pointer;
+}
+input{
+  font-size: 18px;
+  font-weight: bold;
+  color: grey;
+  font-family: monospace;
+}
+.MovieTitle{
+      font-size: 14px;
+        font-family: revert;
+        margin: 4px;
+        color: aqua;
+}
+
+.year{
+font-size: 14px;
+  font-family: revert;
+  margin: 4px;
+  color: aqua;
+}
+  .MovieHead{
+      line-height: 1.1;
+      margin: 2% 42% 1%;
+      font-size: 50px;
+        text-shadow: 0px 5px 7px blueviolet;
+    
+}
+.Favorite{
+  font-size: 2.2em;
+    line-height: 1.1;
+    scale: 0.8;
+    margin: 30px 35%;
+font-size: 50px;
+  text-shadow: 0px 5px 7px blueviolet;
+}
+
+.visible {
+  font-size: 15px;
+  padding: 20px 0;
+  margin-bottom: 0;
+  transform: translateY(-180px) translateX(30px);
+  background-color: rgba(0, 0, 0, 0.856);
+  filter: drop-shadow(0 0 15px 20px #000000aa);
+  width: 300px;
+  border-radius: 5px;
+  visibility: visible;
+  transition: 0.8s;
+}
+
+.image-container {
+  position: relative;
+  transition: transform 0.2s;
+  background-position: center;
+}
+
+ .image-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.LikeButton{
+margin: 10px 100px 0px;
+border: 1px solid white;
+border-radius: 10%;
+background-color: transparent;
+color:white;
+}
+
+.LikeButton:hover {
+  border: none;
+  border-radius: 5%;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px -1px 5px darkseagreen;
+  font-size: 14px;
 }
