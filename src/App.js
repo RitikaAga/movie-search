@@ -9,7 +9,7 @@ function App() {
   const [favorite,setFavorite] = useState([]);
 
   const getMovieRequest = async (searchVal) => {
-    const url = `http://www.omdbapi.com/?s=${searchVal}&apikey=ad69844b`;
+    const url = `https://www.omdbapi.com/?s=${searchVal}&apikey=ad69844b`;
     const response = await fetch(url);
     const data = await response.json();
     if (data.Search) {
@@ -43,7 +43,7 @@ function App() {
       <MovieList name ="Like💗" handleFavoriteClick={ AddFavoriteMovie } movies={movies} />
 
        <MovieListHeading class ="Favorite" heading={" Favorite Movies"} />
-      <MovieList  name = "Remove👎" handleFavoriteClick={ removeFavorite } movies={favorite} />
+      <MovieList  name = "Dislike👎" handleFavoriteClick={ removeFavorite } movies={favorite} />
     </div>
   );
 }

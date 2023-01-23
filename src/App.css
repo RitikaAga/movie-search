@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(83, 74, 74);
+  background-color: rgb(10, 10, 10);
   color: white;
   scroll-behavior: smooth;
 }
@@ -16,7 +16,7 @@ img {
   margin: 30px 30px;
   height: 300px;
   width: 300px;
-  border-radius: 15px;
+  border-radius: 10px;
   transition: 1s;
 }  
 
@@ -46,17 +46,24 @@ input{
   font-family: monospace;
 }
 .MovieTitle{
-      font-size: 14px;
+      font-size: 16px;
         font-family: revert;
         margin: 4px;
-        color: aqua;
+        color: floralwhite;
+        text-align: center;
 }
-
+.MovieTitle:hover {
+ transform: scale(1.1);
+}
 .year{
 font-size: 14px;
   font-family: revert;
   margin: 4px;
-  color: aqua;
+  color: floralwhite;
+  text-align: center;
+}
+.year:hover {
+  transform: scale(1.5);
 }
   .MovieHead{
       line-height: 1.1;
@@ -80,7 +87,7 @@ font-size: 50px;
   margin-bottom: 0;
   transform: translateY(-180px) translateX(30px);
   background-color: rgba(0, 0, 0, 0.856);
-  filter: drop-shadow(0 0 15px 20px #000000aa);
+   filter: drop-shadow(0 0 15px 20px #000000aa); 
   width: 300px;
   border-radius: 5px;
   visibility: visible;
@@ -99,7 +106,7 @@ font-size: 50px;
 }
 
 .LikeButton{
-margin: 10px 100px 0px;
+margin: 10px 120px 0px;
 border: 1px solid white;
 border-radius: 10%;
 background-color: transparent;
